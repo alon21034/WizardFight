@@ -1,4 +1,5 @@
 <resources>
+    <string name="start">Start Game</string>
     <string name="app_name">WizardFightApp</string>
 
     <string name="hello_world">Hello world!</string>
