@@ -1,0 +1,3 @@
+[submodule "WizardFightServer"]
+	path = WizardFightServer
+	url = git@github.com:alon21034/WizardFightServer.git
