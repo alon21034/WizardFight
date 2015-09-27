@@ -10,7 +10,11 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import simpdanny.wizardfightapp.R;
+import simpdanny.wizardfightapp.model.Fighter;
 import simpdanny.wizardfightapp.model.GameMap;
 
 /**
@@ -42,6 +46,13 @@ public class GameView extends View {
     public void update(long dt) {
 
         map.update(dt);
+    }
+
+    public void update(JSONObject json) {
+        try {
+            JSONArray arr = json.getJSONArray("fighter_list");
+            map.update(arr);
+        } catch (Exception e) {}
     }
 
     @Override

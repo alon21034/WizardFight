@@ -2,6 +2,9 @@ package simpdanny.wizardfightapp.model;
 
 import android.graphics.Canvas;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 /**
@@ -22,6 +25,10 @@ public class GameMap {
         for (Fighter f : enemyList) {
             f.update(dt);
         }
+    }
+
+    public void update(JSONArray arr) {
+        
     }
 
     public void draw(Canvas canvas) {
